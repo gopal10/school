@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="unicode">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to NMJ School</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/omoran.png">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/my.js"></script>
+    <style>
+        body {
+            background-color: #5252d4;
+        }
+        
+        #container {
+            position: relative;
+        }
+        
+        .bg-gradient {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 200vh;
+            width: 200vh;
+            -webkit-transform: translateX(33%) translateY(-50%);
+            -ms-transform: translateX(33%) translateY(-50%);
+            transform: translateX(33%) translateY(-50%);
+            background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.4) 0%, rgba(82, 82, 212, 0) 50%);
+            pointer-events: none;
+        }
+        
+        .lines {
+            min-height: 100vh;
+            background-image: linear-gradient(90deg, transparent, transparent calc(25%), black calc((25%) + 1px), transparent calc((25%) + 1px)), linear-gradient(90deg, transparent, transparent calc((100% /2) - 1px), black calc(100% / 2), transparent calc(100% / 2)), linear-gradient(90deg, transparent, transparent calc((12.5%) - 1px), black calc(12.5%), transparent calc(12.5%)), linear-gradient(90deg, transparent, transparent calc((37.5%) - 1px), black calc(37.5%), transparent calc(37.5%)), linear-gradient(90deg, transparent, transparent calc((62.5%) - 1px), black calc(62.5%), transparent calc(62.5%)), linear-gradient(90deg, transparent, transparent calc((87.5%) - 1px), black calc(87.5%), transparent calc(87.5%)), linear-gradient(90deg, transparent, transparent calc((75%) - 1px), black calc(75%), transparent calc(75%));
+            transform: translate3d(0, 0, 0);
+        }
+        
+        .article-header {
+            color: rgba(35, 31, 32, 0.13);
+            position: absolute;
+            right: 50%;
+            top: 28vh;
+            -webkit-transform-origin: top right;
+            -ms-transform-origin: top right;
+            transform-origin: top right;
+            -webkit-transform: rotate(-90deg) translateY(-50%);
+            -ms-transform: rotate(-90deg) translateY(-50%);
+            transform: rotate(-90deg) translateY(-50%);
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        
+        .head {
+            font-family: "GTPressura", sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 80px;
+        }
+        
+        .heading {
+            padding-top: 100px;
+            margin-left: 250px;
+            color: white;
+            font-size: 60px;
+            font-family: "GTPressura", fantasy;
+            letter-spacing: 10px;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        
+        h4 {
+            color: white;
+        margin-bottom: -50px;
+            padding-top: 20px;
+            margin-left: 230px;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        
+        .person {
+            margin-top: 100px;
+            margin-left: 250px;
+            padding: 2em 2em 280px;
+            width: 50%;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-color: #f4511e;
+            background-position: 0% 100%;
+            position: relative;
+        }
+        
+        .name {
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+            text-transform: uppercase;
+            opacity: 1;
+            transform: matrix(1, 0, 0, 1, 0, 0);
+        }
+        
+        .name-info {
+            text-shadow: 1px 1px 2px #000000;
+            transform: matrix(1, 0, 0, 1, 0, 0);
+            color: white;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+        
+        .object
+        {
+                padding: 1em;
+    position: relative;
+        }
+        .object1
+        {
+ left: 11%;
+    top: 48vh;
+            position: relative;
+ 
+            
+}
+         .object2
+        {
+ right: 1%;
+    top: 18vh;
+            position: relative;
+          
+        }
+        
+        
+        .image{
+         position: absolute;
+            width: 200px;
+    -webkit-animation:spin 30s linear infinite;
+    -moz-animation:spin 30s linear infinite;
+    animation:spin 30s linear infinite;
+        
+        }
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+        
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.html"> <span class="glyphicon glyphicon-home" aria-hidden="true"></span> HOME </a>
+                        </li>
+                        <li class="active"><a href="" class="active"><span class="glyphicon glyphicon-collapse-up" aria-hidden="true"></span>TEAM</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="container">
+        <div class="bg-gradient"> </div>
+    </div>
+    <div class="lines">
+        <h1 class="heading">TEAM</h1> 
+        <h4>THE NEXT GENERATION WEB DEVELOPERS</h4>
+        
+        <div class="person" style="background-image: url(#); opacity: 1;  perspective: 600px; transform: matrix(1, 0, 0, 1, 0, 0);" animated="true">
+            <h1 class="name">GOPAL PANCHAL</h1>
+            <p class="name-info"><strong>DEVELOPER, DESIGNER</strong></p>
+            <p class="name-info"> hello it's gopal. i am one of the team mate of "trestle" i worked as developer but really workiung on this project gives opprtunities and learning </p>
+        </div>
+        
+            <div class="person" style="background-image: url(images/gop.jpg); opacity: 1; perspective: 800px; transform: matrix(1, 0, 0, 1, 0, 0);" animated="true">
+            <h1 class="name">GOPAL PANCHAL</h1>
+            <p class="name-info"><strong>DEVELOPER, DESIGNER</strong></p>
+            <p class="name-info"> hello it's gopal. i am one of the team mate of "trestle" i worked as developer but really workiung on this project gives opprtunities and learning </p>
+        </div>
+        
+        
+            <div class="person" style="background-image: url(); opacity: 1; perspective: 800px; transform: matrix(1, 0, 0, 1, 0, 0);" animated="true">
+            <h1 class="name">GOPAL PANCHAL</h1>
+            <p class="name-info"><strong>DEVELOPER, DESIGNER</strong></p>
+            <p class="name-info"> hello it's gopal. i am one of the team mate of "trestle" i worked as developer but really workiung on this project gives opprtunities and learning </p>
+        </div>
+        
+    </div>
+    <div class="article-header">
+      
+        <h1 class="head">TEAM</h1>
+       
+          <div class="object" > <span class="object1" ><img src="images/bri3.png" alt="" class="image"></span>
+          <span class="object2" ><img src="images/bri2.png" alt="" class="image" width="1500px;"></span></div>
+    </div>
+</body>
+
+</html>
